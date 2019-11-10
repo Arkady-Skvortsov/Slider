@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Boogaloo');
+
+		* {
+			margin: 0;
+			padding: 0;
+			height: 700px;
+			box-sizing: border-box;
+        }
+
+		.slide-block {
+			width: 60%;
+            margin: auto;
+            cursor: pointer;
+            overflow: hidden;
+			border: 10px solid black;
+		}
+
+		.slide-box {
+            display: flex;
+            width: 100%;
+            height: 550px;
+		}
+
+		.prevBtn {
+			position: absolute;
+			height: 80px;
+			width: 80px;
+			cursor: pointer;
+		    top: 300px;
+			z-index: 1;
+			border-radius: 40px;
+			margin-left: 350px;
+			background-color: black;
+			transition: 1s ease;
+			-o-transition: 1s ease;
+			-mozila-transition: 1s ease;
+			-webkit-transition: 1s ease;
+		}
+
+		.prevBtn:hover {
+			background-color: white;
+		}
+
+		.prevBtn #left {
+			font-size: 50px;
+			color: white;
+			margin-left: 20px;
+			margin-top: 15px;
+			transition: 1s ease;
+			-o-transition: 1s ease;
+			-mozila-transition: 1s ease;
+			-webkit-transition: 1s ease;
+		}
+
+		.prevBtn #left:hover {
+			text-shadow: 0 0 30px silver;
+			color: black;
+			transform: translateX(-10px);
+		}
+
+		.prevBtn.hid2 {
+			opacity: 0.3;
+		}
+
+        .nextBtn {
+        	position: absolute;
+        	height: 80px;
+        	width: 80px;
+        	top: 300px;
+        	border-radius: 40px;
+        	margin-left: 1150px;
+        	background-color: black;
+        	cursor: pointer;
+        	transition: 1s ease;
+        	-o-transition: 1s ease;
+        	-mozila-transition: 1s ease;
+        	-webkit-transition: 1s ease;
+        }
+
+        .nextBtn.hid {
+        	opacity: 0.3;
+        }
+
+        .nextBtn:hover {
+        	background-color: white;
+        }
+
+        .nextBtn #right {
+        	font-size: 50px;
+        	color: white;
+        	margin-top: 15px;
+        	margin-left: 20px;
+        	transition: 1s ease;
+        	-o-transition: 1s ease;
+        	-mozila-transition: 1s ease;
+        	-webkit-transition: 1s ease;
+        }
+
+        .nextBtn #right:hover {
+        	color: black;
+        	text-shadow: 0 0 30px silver;
+        	transform: translateX(10px);
+        }
+
+        .txt-block {
+        	height: 200px;
+        	width: 100%;
+        	background-color: black;
+        	cursor: pointer;
+        	opacity: 0.6;
+        }
+
+        .txt-block #text {
+        	font-size: 50px;
+        	position: absolute;
+        	font-family: 'Boogalo', cursive;
+            margin-left: 300px;
+        	color: white;
+        	margin-top: 30px;
+        	transition: 900ms ease-in-out;
+        	-o-transition: 900ms ease-in-out;
+        	-mozila-transition: 900ms ease-in-out;
+        	-webkit-transition: 900ms ease-in-out;
+        }
+
+        .txt-block #text:hover {
+            opacity: 1;
+            text-shadow: 5px 0 0 grey; 
+        }
